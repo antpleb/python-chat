@@ -1,0 +1,9 @@
+{
+  "name": "js-gui",
+  "version": "0.0.0",
+  "description": "js gui",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

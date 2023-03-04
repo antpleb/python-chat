@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html>
+            <body>
+                <div id="messages"></div>
+                
+
+                <form id="message-form" onsubmit="this.submit(); this.reset();" style="position:absolute;top:900px;">
+                    <label>
+                        Enter your message:
+                        <input type="text" name="message" id="user_message" style="overflow:auto;" onsubmit="this.submit(); this.reset();">
+                    </label>
+                        <button type="submit">-></button>
+                </form>
+                
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+                    <script>
+                        var sendMessage = function(message) {
+                
+                        };
+                        $("#message-form").on("submit", function(event) {
+                             event.preventDefault();
+                            $("#messages").text(message);
+                        });
+                    </script>
+                    <script src="app.js"></script>
+        </body>
+</html>
